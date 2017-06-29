@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<p>Date: <span id="date"></span></p>
+		<script>
+			$(function(){
+				$.get('/date', function(data){
+					$("#date").html(data);
+				});
+			});
+		</script>
+	</body>
+</html>
